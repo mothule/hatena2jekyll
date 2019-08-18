@@ -1,0 +1,26 @@
+AUTHOR: unknown_author
+TITLE: あいうえおA
+BASENAME: aiueo-a-title
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: 0
+DATE: 08/05/2019 22:30:00
+IMAGE: https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png
+-----
+BODY:
+<p>ほげほげ1</p>
+-----
+--------
+AUTHOR: unknown_author
+TITLE: あいうえおB
+BASENAME: aiueo-b-title
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: 0
+DATE: 08/05/2019 22:30:00
+IMAGE: https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png
+-----
+BODY:
+<p>ほげほげ2</p>
+-----
+--------

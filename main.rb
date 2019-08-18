@@ -21,11 +21,5 @@ Pipe::FigureRemover.new(articles: articles).invoke
 Pipe::HighlightSanitizer.new(articles: articles).invoke
 Pipe::CategorySanitizer.new(articles: articles).invoke
 
-# convert to markdown from html
-articles.each do |article|
-  article.body = ReverseMarkdown.convert article.body,
-                                         github_flavored: true,
-                                         unknown_tags: :raise
-end
-
+# convert to markdown from html and output to markdown files
 articles.each(&:export_to_markdown)

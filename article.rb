@@ -11,6 +11,7 @@ class Article
                 :categories,
                 :image,
                 :body,
+                :markdowned_body,
                 :comments
 
   class << self
@@ -30,10 +31,12 @@ class Article
         puts "Article count: #{articles.count}"
       end
     end
-
   end
 
   def export_to_markdown
+
+    convert_markdown_from_html
+
     file_path = "./_posts/#{file_name}"
     File.open(file_path, 'w') do |f|
       f.puts('---')
@@ -50,7 +53,7 @@ class Article
       end
       f.puts('draft: true')
       f.puts('---')
-      f.puts(body)
+      f.puts(markdowned_body)
     end
   end
 
@@ -95,6 +98,12 @@ class Article
 
   private
 
+  def convert_markdown_from_html
+    @markdowned_body = ReverseMarkdown.convert body,
+                                    github_flavored: true,
+                                    unknown_tags: :raise
+  end
+
   def append_category(category)
     self.categories = [] if categories.nil?
     categories << category
@@ -105,7 +114,7 @@ class Article
       @block_in = false
 
       if @body_block
-        self.body = @block_buffer.join("\n")
+        self.body = @block_buffer.join("")
         @body_block = false
       end
 

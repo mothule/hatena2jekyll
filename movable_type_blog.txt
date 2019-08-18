@@ -61,15 +61,9 @@ BODY:
 <span class="synPreProc">end</span>
 </pre>
 
-<pre class="code lang-sh" data-lang="sh" data-unlink>$ brew cask info ngrok
-ngrok: latest
-https://ngrok.com/
-/usr/<span class="synStatement">local</span>/Caskroom/ngrok/latest <span class="synPreProc">(</span><span class="synConstant">24</span><span class="synSpecial">.6MB</span><span class="synPreProc">)</span>
-From: https://github.com/Homebrew/homebrew-cask/blob/master/Casks/ngrok.rb
-<span class="synStatement">==&gt;</span> Name
-ngrok
-<span class="synStatement">==&gt;</span> Artifacts
-ngrok <span class="synPreProc">(</span><span class="synSpecial">Binary</span><span class="synPreProc">)</span>
+<pre class="code lang-ruby" data-lang="ruby" data-unlink>
+puts foo
+hoge = 'ffu'
 </pre>
 
 <h2>テーブル</h2>
@@ -111,6 +105,7 @@ CATEGORY: aiueo
 BODY:
 <p>あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお</p>
 <p><figure class="figure-image figure-image-fotolife" title="ngrok"><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/unknown_author/20190805/20190805174427.png" alt="ngrok" title="f:id:unknown_author:20190805174427p:plain" class="hatena-fotolife" itemprop="image"></span><figcaption>ngrok</figcaption></figure></p>
+<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fblog.hateblo.jp%2Fentry%2Fruby%2Frails%2Faccess-by-outside" title="はてなブログタイトル" class="embed-card embed-blogcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://mothulog.hateblo.jp/entry/ruby/rails/access-by-outside">blog.hateblo.jp</a></cite></p>
 -----
 COMMENT:
 AUTHOR: unknown_author
